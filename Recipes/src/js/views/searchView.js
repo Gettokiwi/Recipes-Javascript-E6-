@@ -92,6 +92,7 @@ const renderButtons = (page, numResults, resPerPage) => {
 };
 
 export const renderResults = (recipes, page = 1, resPerPage = 10) => {
+    console.log("If recipes is undefined, then it means the API Key ran out of daily free usage.");
     // render results of currente page
     const start = (page - 1) * resPerPage;
     const end = page * resPerPage;
